@@ -96,17 +96,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+            
 
 
+            div {
+                outline: 1px;
+                outline-style: dotted;
+                background: rgba(255, 191, 202, 0.38);
+            }
 
+            .container .container-wrap {
+                float: none;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                height: auto;
+                margin-top: 36px;   
+            }
 
+            .header { 
+                height: 253px;
+                
+                
+            }
 
+            .logo {
+                height: 194px;
+            }
 
+            #site-info {
+                height: 224px;
+            }
 
+            .column .alpha #col2 {
+                height: 224px;
+            }
 
+            .column .omega #col2 {
+                height: auto;
+            }
 
+            .body {
+                height: auto;
+                margin-top: auto;
+                float: none;
+                margin-right: auto;
+                margin-left: auto;
+            }
 
+            .about-us {
+                height:340px;
+            }
 
+            .img{
+                height: 340px;
+                margin-top: 30px;
+            }
 
 
 
