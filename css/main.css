@@ -153,8 +153,17 @@ textarea {
                 margin-top: 30px;
             }
 
+            ul, a {
+                display: inline;
+                list-style-type: none;
+                float: left;
+            }
 
-
+            .food .alpha .drinks .omega {
+                display: inline;
+                float: left;
+                font-family: font-family: 'Roboto', sans-serif;
+            }
 
 
 
