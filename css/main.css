@@ -105,6 +105,14 @@ textarea {
                 background: rgba(255, 191, 202, 0.38);
             }
 
+            .nav-fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+            }
+
             .container .container-wrap {
                 float: none;
                 display: block;
@@ -161,8 +169,9 @@ textarea {
 
             .food .alpha .drinks .omega {
                 display: inline;
-                float: left;
-                font-family: font-family: 'Roboto', sans-serif;
+                float: none;
+                width: auto;
+                margin: auto;
             }
 
 
