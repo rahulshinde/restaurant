@@ -96,84 +96,286 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-            
+   
+div {
+   outline: 1px;
+   outline-style: dotted;
+   background: rgba(255, 191, 202, 0.38);
+}
+
+/* ===================================================================
+    text styling 
+   ===================================================================*/
+html,
+body {
+    font-size: 16px;
+    line-height: 24px;
+}
+p,
+ul,
+ol,
+dl {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 30px;
+}
+/* === header styling === */
+.loc-address {
+  font-size: 12px;
+  line-height: 18.5px;
+  margin-top: 10px;
+}
+.loc-phone {
+  font-size: 12px;
+  margin-bottom: 2.7px;
+}
+.open-butcher {
+  font-size: 12px;
+  margin-top: 6px;
+  font-weight: 900;
+}
+.open-restaurant {
+  font-size: 12px;
+  margin-top: 12px;
+}
+.open-date {
+  font-size: 12px;
+  line-height: 4px;
+  margin-top: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+.open-time {
+  font-size: 12px;
+  line-height: 4px;
+  margin-top: 0;
+}
+/* === end header styling === */
+
+/* === about styling === */
+
+.about-us{
+  margin-top: 100px;
+}
+
+.about-head {
+  font-size: 19.4px;
+  text-decoration: line-through;
+}
+
+.about-text {
+  font-size: 19.4px;
+  padding-left: 31.4px;
+}
+
+/* === end about styling === */
+
+/* === menu nav styling === */
+
+.label {
+  font-size: 18.5px;
+  text-decoration: line-through;
+}
 
 
-            div {
-                outline: 1px;
-                outline-style: dotted;
-                background: rgba(255, 191, 202, 0.38);
-            }
 
-            .nav-fixed {
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                width: 30px;
-                height: 30px;
-            }
 
-            .container .container-wrap {
-                float: none;
-                display: block;
-                margin-right: auto;
-                margin-left: auto;
-                height: auto;
-                margin-top: 36px;   
-            }
+/* === menu nav styling === */
 
-            .header { 
-                height: 253px;
-                
-                
-            }
+.food-title {
+  font-size: 18.5px;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
-            .logo {
-                height: 194px;
-            }
+.drink-title {
+  font-size: 18.5px;
+  font-weight: 100;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
-            #site-info {
-                height: 224px;
-            }
+.section-title {
+  font-size: 12px;
+  text-decoration: line-through;
+}
 
-            .column .alpha #col2 {
-                height: 224px;
-            }
+.item-name {
+  font-size: 11.5px;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-bottom:0; 
+}
 
-            .column .omega #col2 {
-                height: auto;
-            }
+.menu-desc {
+  font-size: 11.5px;
+  font-weight: 300;
+  font-style: italic;
+  padding-left: 10px;
+  line-height: 11.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-            .body {
-                height: auto;
-                margin-top: auto;
-                float: none;
-                margin-right: auto;
-                margin-left: auto;
-            }
+.menu-price {
+  font-size: 11.5px;
+  font-weight: 300;
+  padding-left: 10px;
+  margin-top: 0;
+}
+}
 
-            .about-us {
-                height:340px;
-            }
+/* ===================================================================
+    end text styling 
+   ===================================================================*/
 
-            .img{
-                height: 340px;
-                margin-top: 30px;
-            }
+ .container .container-wrap {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    margin-top: 36px;   
+ }
 
-            ul, a {
-                display: inline;
-                list-style-type: none;
-                float: left;
-            }
+ .header { 
+    height: 253px;
+     
+     
+ }
 
-            .food .alpha .drinks .omega {
-                display: inline;
-                float: none;
-                width: auto;
-                margin: auto;
-            }
+/* === logo styling === */
+.logo {
+   height: auto;
+}
+.logo-img{
+   margin-top: 0;
+   display: block;
+   width: 165px;
+   height: 258px;
+   overflow: hidden;
+   background: url(../img/p_l_logo.jpg) left top no-repeat;
+   background-size: cover;
+}
+/* === end logo styling === */
 
+/* === arrow-styling === */
+#nav-up {
+  position: fixed;
+  bottom: 0;
+  right: auto;
+  width: 40px;
+  height: 40px;
+  background: url(../img/up-black.png) left top no-repeat;
+  background-size: cover;
+}
+/* === end arrow-styling === */
+
+#site-info {
+   height: 224px;
+}
+
+.column .alpha #col2 {
+   height: 224px;
+}
+
+.column .omega #col2 {
+   height: auto;
+}
+
+.body {
+   height: auto;
+   margin-top: auto;
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.about-us {
+    height:340px;
+}
+
+.img{
+    height: 340px;
+    margin-top: 30px;
+}
+
+ul, a {
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+}
+
+.food .alpha .drinks .omega {
+    display: inline;
+    float: none;
+    width: auto;
+    margin: auto;
+}
+
+
+/* ===============================================================
+    nav styling 
+   ===============================================================*/
+
+.nav{
+    list-style: none;
+}
+
+.nav,
+.nav > li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+
+.masthead-social {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.masthead-social li {
+    float: left;
+}
+
+.masthead-social a {
+    overflow: auto;
+    display: inline;
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/sprites.png);
+    background-repeat: no-repeat
+}
+
+.social-facebook {
+    background-size:78px;
+}
+
+.social-twitter {
+    background-size:78px;
+    background-position: -55px 0;
+    margin-right: 8px;
+}
+
+.social-instagram {
+    background-size:78px;
+    background-position: -27px 0;
+  }
 
 
 /* ==========================================================================
