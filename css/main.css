@@ -106,6 +106,11 @@ div {
 /* ===================================================================
     text styling 
    ===================================================================*/
+
+
+
+
+/* === general text styling === */
 html,
 body {
     font-size: 16px;
@@ -132,7 +137,18 @@ h6 {
 h1 {
   font-size: 30px;
 }
+/* === END general text styling === */
+
+
+
+
+
 /* === header styling === */
+
+.logo-text {
+  margin-top: -15px;
+}
+
 .loc-address {
   font-size: 12px;
   line-height: 18.5px;
@@ -163,7 +179,11 @@ h1 {
   line-height: 4px;
   margin-top: 0;
 }
-/* === end header styling === */
+/* === END header styling === */
+
+
+
+
 
 /* === about styling === */
 
@@ -181,19 +201,61 @@ h1 {
   padding-left: 31.4px;
 }
 
-/* === end about styling === */
+/* === END about styling === */
+
+
+
+
 
 /* === menu nav styling === */
+.food-container,
+.drink-container {
+  float: left;
+}
 
 .label {
   font-size: 18.5px;
   text-decoration: line-through;
 }
 
+.navigation ul {
+  padding-left: 10px;
+}
+
+#food{
+  float:none;
+  display: block;
+}
+
+#food li a:link,
+li a:visited {/*
+  float: none;*/
+  width: 160px;
+  margin-bottom: 7.4px;
+  font-size: 11.5px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+#drink li a:link,
+li a:visited {/*
+  float: none;*/
+  width: 160px;
+  margin-bottom: 7.4px;
+  font-size: 11.5px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+/* === END menu nav styling === */
 
 
 
-/* === menu nav styling === */
+
+
+/* === menu font styling === */
 
 .food-title {
   font-size: 18.5px;
@@ -237,65 +299,49 @@ h1 {
   padding-left: 10px;
   margin-top: 0;
 }
-}
+/* === END menu font styling === */
+
 
 /* ===================================================================
-    end text styling 
+    END text styling 
    ===================================================================*/
 
- .container .container-wrap {
-    float: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    height: auto;
-    margin-top: 36px;   
- }
+/* ===================================================================
+    div styling 
+   ===================================================================*/
 
- .header { 
-    height: 253px;
-     
-     
- }
 
-/* === logo styling === */
-.logo {
-   height: auto;
+.body {
+  padding-left: 50px;
 }
-.logo-img{
-   margin-top: 0;
+
+/* === elements that need to be restyled for mobile === */
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+   .body {
+     padding-left: 20px;
+   }
+
+   .about-us{
+     padding-top: 100px;
+   }
+}
+
+/* === END elements that need to be restyled for mobile === */
+
+.container .container-wrap {
+   float: none;
    display: block;
-   width: 165px;
-   height: 258px;
-   overflow: hidden;
-   background: url(../img/p_l_logo.jpg) left top no-repeat;
-   background-size: cover;
-}
-/* === end logo styling === */
-
-/* === arrow-styling === */
-#nav-up {
-  position: fixed;
-  bottom: 0;
-  right: auto;
-  width: 40px;
-  height: 40px;
-  background: url(../img/up-black.png) left top no-repeat;
-  background-size: cover;
-}
-/* === end arrow-styling === */
-
-#site-info {
-   height: 224px;
-}
-
-.column .alpha #col2 {
-   height: 224px;
-}
-
-.column .omega #col2 {
+   margin-right: auto;
+   margin-left: auto;
    height: auto;
+   margin-top: 36px;   
 }
+
+.header { 
+   height: 253px;
+   width: auto;
+ }
 
 .body {
    height: auto;
@@ -304,6 +350,7 @@ h1 {
    margin-right: auto;
    margin-left: auto;
 }
+
 
 .about-us {
     height:340px;
@@ -328,8 +375,55 @@ ul, a {
 }
 
 
+
+
+
+/* === logo styling === */
+.logo {
+   height: auto;
+}
+.logo-img{
+   margin-top: 0;
+   display: block;
+   width: 165px;
+   height: 258px;
+   overflow: hidden;
+   background: url(../img/p_l_logo.jpg) left top no-repeat;
+   background-size: cover;
+}
+/* === END logo styling === */
+
+
+
+
+
+/* === arrow-styling === */
+#nav-up {
+  position: fixed;
+  bottom: 10px;
+  right: auto;
+  width: 40px;
+  height: 40px;
+  background: url(../img/up-black.png) left top no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity .3s linear;
+          transition: opacity .3s linear;
+}
+
+#nav-up.is-visible {
+  opacity: 1;
+}
+
+/* === END arrow-styling === */
+
+/* ===================================================================
+    END div styling 
+   ===================================================================*/
+
+
 /* ===============================================================
-    nav styling 
+    info nav styling 
    ===============================================================*/
 
 .nav{
@@ -375,7 +469,11 @@ ul, a {
 .social-instagram {
     background-size:78px;
     background-position: -27px 0;
-  }
+}
+
+/* ===============================================================
+    END info nav styling 
+   ===============================================================*/
 
 
 /* ==========================================================================

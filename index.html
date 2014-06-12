@@ -59,11 +59,11 @@
 
                                     <nav class="masthead-social two columns">
                                         <ul class="nav">
-                                            <li><a class="social-facebook ir" href="#">facebook</a></li>
+                                            <li><a class="social-facebook ir" href="https://www.facebook.com/pages/Parts-Labor/669500293094417">facebook</a></li>
 
-                                            <li><a class="social-twitter ir" href="#">twitter</a></li>
+                                            <li><a class="social-twitter ir" href="https://twitter.com/partslabor">twitter</a></li>
                                             
-                                            <li><a class="social-instagram ir" href="#">instagram</a></li>
+                                            <li><a class="social-instagram ir" href="http://instagram.com/partslabor">instagram</a></li>
                                             
                                         </ul>
                                     </nav> <!-- end social media -->
@@ -125,33 +125,43 @@
                     <div class="six columns img">img
                     </div>
 
-                    <nav class="six columns navigation">
+                    <nav class="six columns navigation" id="menu-nav">
+
+                        <div class="food-container">
                         
-                        <h2 class="label" id="nav-top">food</h2>
+                            <h2 class="label" id="nav-top">food</h2>
+    
+                            <!-- <ul class "three column nav-food alpha" id="food"> -->
+                            <ul id="food" style="float: left;">
+                                <li><a href="#beer-snacks">beer snacks</a></li>
+                                <li><a href="#fromsts">from the salt house to share</a></li>
+                                <li><a href="#salads">salads</a></li>
+                                <li><a href="#dryabc">dry-aged butcher cuts</a></li>
+                                <li><a href="#sand">sandwiches</a></li>
+                                <li><a href="#varieties">varieties</a></li>
+                                <li><a href="#saus">sausage</a></li>
+                                <li><a href="#hearth">hearth vegetables</a></li>
+                            </ul> <!-- end of nav-food -->
 
-                        <ul class "three column nav-food alpha" id="food">
-                            <li><a href="#beer-snacks">beer snacks</a></li>
-                            <li><a href="#fromsts">from the salt house to share</a></li>
-                            <li><a href="#salads">salads</a></li>
-                            <li><a href="#dryabc">dry-aged butcher cuts</a></li>
-                            <li><a href="#sand">sandwiches</a></li>
-                            <li><a href="#varieties">varieties</a></li>
-                            <li><a href="#saus">sausage</a></li>
-                            <li><a href="#hearth">hearth vegetables</a></li>
-                        </ul> <!-- end of nav-food -->
+                        </div>
 
-                        <h2 class="label">drinks</h2>
+                        <div class="drink-container">
 
-                        <ul class "three column nav-drink omega" id="drink">
-                            <li><a href="#beer">beer</a></li>
-                            <li><a href="#farm-beer">farm beer</a></li>
-                            <li><a href="#cider">cider</a></li>
-                            <li><a href="#libations">libations</a></li>
-                            <li><a href="#teet">teetotalers</a></li>
-                            <li><a href="#wine-od">wines on draught</a></li>
-                            <li><a href="#white">white by the bottle</a></li>
-                            <li><a href="#red">red by the bottle</a></li>
-                        </ul> <!-- end of nav-drink -->
+                            <h2 class="label">drinks</h2>
+    
+                            <!-- <ul class "three column nav-drink omega" id="drink"> -->
+                            <ul id="drink" style="float: left;">
+                                <li><a href="#beer">beer</a></li>
+                                <li><a href="#farm-beer">farm beer</a></li>
+                                <li><a href="#cider">cider</a></li>
+                                <li><a href="#libations">libations</a></li>
+                                <li><a href="#teet">teetotalers</a></li>
+                                <li><a href="#wine-od">wines on draught</a></li>
+                                <li><a href="#white">white by the bottle</a></li>
+                                <li><a href="#red">red by the bottle</a></li>
+                            </ul> <!-- end of nav-drink -->
+
+                        </div>
 
                     </nav> <!-- end of navigation -->
 
@@ -595,9 +605,10 @@
                 
             </div>
 
-            <div class="nav-fixed">
+                    <div class="nav-fixed">
                         <a href="#nav-top" id="nav-up"></a>
-            </div>
+                    </div>
+            
 
         </div><!--end container -->
 
@@ -608,6 +619,7 @@
         <!-- Load jQuery plugins here -->
         <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+        <script src="js/vendor/waypoints.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
