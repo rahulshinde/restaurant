@@ -94,14 +94,14 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   !!! !!! !!! AUTHOR'S CUSTOM STYLES !!! !!! !!!
    ========================================================================== */
    
-div {
+/*div {
    outline: 1px;
    outline-style: dotted;
    background: rgba(255, 191, 202, 0.38);
-}
+}*/
 
 /* ===================================================================
     text styling 
@@ -311,19 +311,39 @@ li a:visited {/*
    ===================================================================*/
 
 
+/* === image styling === */
+.img{
+    height: 340px;
+    margin-top: -60px;
+}
+
+/* === image font styling === */
+
+
+
+
+
 .body {
-  padding-left: 50px;
+  padding-left: 100px;
 }
 
 /* === elements that need to be restyled for mobile === */
 
 @media only screen and (min-width: 0px) and (max-width: 800px) {
    .body {
-     padding-left: 20px;
+     padding-left: 0px;
    }
 
    .about-us{
-     padding-top: 100px;
+     padding-top: 30px;
+   }
+
+   .img {
+    visibility: hidden;
+   }
+
+   .food-container {
+    margin-top: -380px;
    }
 }
 
@@ -356,10 +376,6 @@ li a:visited {/*
     height:340px;
 }
 
-.img{
-    height: 340px;
-    margin-top: 30px;
-}
 
 ul, a {
     display: inline-block;
@@ -385,8 +401,8 @@ ul, a {
 .logo-img{
    margin-top: 0;
    display: block;
-   width: 165px;
-   height: 258px;
+   width: 160px;
+   height: 250px;
    overflow: hidden;
    background: url(../img/p_l_logo.jpg) left top no-repeat;
    background-size: cover;
@@ -422,9 +438,9 @@ ul, a {
    ===================================================================*/
 
 
-/* ===============================================================
+/* ===================================================================
     info nav styling 
-   ===============================================================*/
+   ===================================================================*/
 
 .nav{
     list-style: none;
@@ -474,6 +490,13 @@ ul, a {
 /* ===============================================================
     END info nav styling 
    ===============================================================*/
+
+/*===========================================================================
+    !!! !!! !!! END AUTHOR STYLING !!! !!! !!!
+ ============================================================================ */
+
+
+
 
 
 /* ==========================================================================
