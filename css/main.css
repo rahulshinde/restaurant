@@ -97,11 +97,11 @@ textarea {
    !!! !!! !!! AUTHOR'S CUSTOM STYLES !!! !!! !!!
    ========================================================================== */
    
-/*div {
+div {
    outline: 1px;
    outline-style: dotted;
    background: rgba(255, 191, 202, 0.38);
-}*/
+}
 
 /* ===================================================================
     text styling 
@@ -329,9 +329,33 @@ li a:visited {/*
 
 /* === elements that need to be restyled for mobile === */
 
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media only screen and (min-width: 450px) and (max-width: 800px) {
    .body {
      padding-left: 0px;
+   }
+
+   .about-us{
+     padding-top: 30px;
+   }
+
+   .img {
+    visibility: hidden;
+   }
+
+   .food-container {
+    margin-top: -380px;
+   }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 450px) {
+   .body {
+    width: 200px;
+     padding-left: 0px;
+   }
+   
+   .food,
+  #menu-food {
+      width: 200px;
    }
 
    .about-us{
