@@ -212,6 +212,7 @@ h1 {
 .food-container,
 .drink-container {
   float: left;
+  margin-top: 30px;
 }
 
 .label {
@@ -231,25 +232,29 @@ h1 {
 #food li a:link,
 li a:visited {/*
   float: none;*/
-  width: 160px;
+  width: 120px;
   height: 40px;
   margin-bottom: 7.4px;
   font-size: 11.5px;
   text-decoration: none;
   color: white;
   background-color: black;
+  text-indent: 10px;
+  padding-top: 10px;
 }
 
 #drink li a:link,
 li a:visited {/*
   float: none;*/
-  width: 160px;
+  width: 120px;
   height: 40px;
   margin-bottom: 7.4px;
   font-size: 11.5px;
   text-decoration: none;
   color: white;
   background-color: black;
+  text-indent: 10px;
+  padding-top: 10px;
 }
 
 /* === END menu nav styling === */
@@ -317,7 +322,7 @@ li a:visited {/*
 /* === image styling === */
 .img{
     height: 340px;
-    margin-top:  0px;
+    margin-top:  -30px;
 }
 
 /* === image font styling === */
@@ -339,11 +344,43 @@ li a:visited {/*
   padding-left: 100px;
 }
 
+.drink-container {
+  margin-left: 44px;
+}
+
 /* ============================================== 
    elements that need to be restyled for mobile 
    ============================================== */
 
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+  
+  .about-us{
+    padding-top: 10px;
+  }
+
+  .food, .drinks {
+    width: 120px;
+    float: left;
+  }
+
+  .drinks {
+    margin-left: 10px;
+  }
+
+
+  .food-container, .drink-container {
+    width: 130px;
+    float: left;
+  }
+
+  .drink-container {
+    margin-left: 0px;
+  }
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .body {
     padding-left: 0px;
   }
@@ -351,30 +388,32 @@ li a:visited {/*
   .about-us{
     padding-top: 10px;
   }
+
+  .food, .drinks {
+    width: 150px;
+    float: left;
+  }
   
   .img {
     visibility: hidden;
   }
+
+  /*.nav-up {
+  margin-right: 30px;
+  }*/
   
-  .food-container {
-    margin-top: -380px;
+  .food-container, .drink-container {
+    margin-top: -420px;
+    float: left;
   }
 
   .drink-container {
-    margin-top: -380px;
+    margin-left: 33px;
   }
-
-  #nav-up {
-    position: fixed;
-    bottom: 10px;
-    right: 300px;
-  }
-
-
 
 }
 
-@media only screen and (min-width: 0px) and (max-width: 500px) {
+@media only screen and (max-width: 479px) {
   .body,
   #body {
     width: 200px;
@@ -396,26 +435,66 @@ li a:visited {/*
    #about-us-id{
      padding-top: 0px;
      margin-left: 0;
-     width: 250px;
+     width: 280px;
    }
 
-  #nav-up {
-  position: fixed;
-  bottom: 10px;
-  right: auto;
-  }    
+  .navigation {
+    float: none;
+    height: auto;
+  }
 
   .img {
     visibility: hidden;
   }
 
   .food-container {
-    margin-top: -380px;
+    margin-top: -360px;
+  }
+
+  .drink-container {
+    float: none;
+    margin-top: 190px;
+    margin-left: 0;
   }
 
 }
 
 /* === END elements that need to be restyled for mobile === */
+
+
+
+
+
+/* === arrow-styling === */
+#nav-fixed {
+  text-align: right;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  margin-left: -55px;
+}
+
+
+#nav-up {
+  width: 40px;
+  height: 40px;
+  background: url(../img/up-black.png) left top no-repeat;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity .3s linear;
+          transition: opacity .3s linear;
+  float: right;
+}
+
+#nav-up.is-visible {
+  opacity: 1;
+}
+
+/* === END arrow-styling === */
+
+
+
+
 
 .container .container-wrap {
    float: none;
@@ -444,8 +523,7 @@ li a:visited {/*
     height:340px;
 }
 
-
-ul, a {
+.nav li, a {
     display: inline-block;
     list-style-type: none;
     float: left;
@@ -454,7 +532,7 @@ ul, a {
 .food .alpha .drinks .omega {
     display: inline;
     float: none;
-    width: auto;
+    width: 160px;
     margin: auto;
 }
 
@@ -481,29 +559,12 @@ ul, a {
 
 
 
-/* === arrow-styling === */
-#nav-up {
-  position: fixed;
-  bottom: 10px;
-  right: 610px;
-  width: 40px;
-  height: 40px;
-  background: url(../img/up-black.png) left top no-repeat;
-  background-size: cover;
-  opacity: 0;
-  -webkit-transition: opacity .3s linear;
-          transition: opacity .3s linear;
-}
-
-#nav-up.is-visible {
-  opacity: 1;
-}
-
-/* === END arrow-styling === */
-
 /* ===================================================================
     END div styling 
    ===================================================================*/
+
+
+
 
 
 /* ===================================================================
