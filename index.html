@@ -6,7 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>parts and labor</title>
+        <style>
+            a[href^=tel]{ color:#000000; text-decoration:none;}
+        </style>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +27,7 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/flexslider.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
     </head>
@@ -50,20 +54,21 @@
                                 <div class="two columns alpha col1" id="c1">
 
                                     <h5 class="loc-address">
-                                        2600 N Howard St., Baltimore, MD 21218
+                                        2600 N Howard St., <br> Baltimore, MD 21218
                                     </h5>
                                     
+
                                     <h5 class="loc-phone">
-                                        443-873-8887
+                                        443.873.8887
                                     </h5>
 
-                                    <nav class="masthead-social two columns">
+                                    <nav class="masthead-social two columns" id="social">
                                         <ul class="nav">
-                                            <li><a class="social-facebook ir" href="#">facebook</a></li>
+                                            <li><a class="social-facebook ir" href="https://www.facebook.com/pages/Parts-Labor/669500293094417" alt="facebook"></a></li>
 
-                                            <li><a class="social-twitter ir" href="#">twitter</a></li>
+                                            <li><a class="social-twitter ir" href="https://twitter.com/partslabor" alt="twitter"></a></li>
                                             
-                                            <li><a class="social-instagram ir" href="#">instagram</a></li>
+                                            <li><a class="social-instagram ir" href="http://instagram.com/partslabor" alt="instagram"></a></li>
                                             
                                         </ul>
                                     </nav> <!-- end social media -->
@@ -107,8 +112,8 @@
                             </div> <!-- end col1/col2 -->
                 </div> <!-- end header -->
                 
-                <div class="body clearfix">
-                    <div class="six columns about-us">
+                <div class="body clearfix" id="body">
+                    <div class="six columns about-us" id="about-us-id">
                         <h2 class="about-head">
                             about us
                         </h2>
@@ -122,41 +127,61 @@
                         </h3>
                     </div>
 
-                    <div class="six columns img">img
+                    <div class="six columns img content">
+
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li><img src="http://photos-e.ak.instagram.com/hphotos-ak-xaf1/10251288_767017533331932_1585041503_n.jpg" alt=""></li>
+                                <li><img src="http://photos-e.ak.instagram.com/hphotos-ak-xfa1/1209451_299062123586332_1899632729_n.jpg" alt=""></li>
+                                <li><img src="http://photos-g.ak.instagram.com/hphotos-ak-xpa1/10254062_317721801708726_451376172_n.jpg" alt=""></li>
+                                <li><img src="http://scontent-b.cdninstagram.com/hphotos-xpa1/t51.2885-15/10251518_827939877234233_188853018_n.jpg" alt=""></li>
+                                <li><img src="http://photos-d.ak.instagram.com/hphotos-ak-xpf1/10251299_1395656710715123_1908902127_n.jpg" alt=""></li>
+                            </ul>
+                        </div>
                     </div>
 
-                    <nav class="six columns navigation">
+                    <nav class="six columns navigation" id="menu-nav">
+
+                        <div class="food-container">
                         
-                        <h2 class="label" id="nav-top">food</h2>
+                            <h2 class="label" id="nav-top">food</h2>
+    
+                            <!-- <ul class "three column nav-food alpha" id="food"> -->
+                            <ul id="food" style="float: left;">
+                                <li><a href="#beer-snacks">beer snacks</a></li>
+                                <li><a href="#fromsts">f.t.s.h.t.s</a></li>
+                                <li><a href="#salads">salads</a></li>
+                                <li><a href="#dryabc">dry-aged b.c.</a></li>
+                                <li><a href="#sand">sandwiches</a></li>
+                                <li><a href="#varieties">varieties</a></li>
+                                <li><a href="#saus">sausage</a></li>
+                                <li><a href="#hearth">hearth vegetables</a></li>
+                            </ul> <!-- end of nav-food -->
 
-                        <ul class "three column nav-food alpha" id="food">
-                            <li><a href="#beer-snacks">beer snacks</a></li>
-                            <li><a href="#fromsts">from the salt house to share</a></li>
-                            <li><a href="#salads">salads</a></li>
-                            <li><a href="#dryabc">dry-aged butcher cuts</a></li>
-                            <li><a href="#sand">sandwiches</a></li>
-                            <li><a href="#varieties">varieties</a></li>
-                            <li><a href="#saus">sausage</a></li>
-                            <li><a href="#hearth">hearth vegetables</a></li>
-                        </ul> <!-- end of nav-food -->
+                        </div>
 
-                        <h2 class="label">drinks</h2>
+                        <div class="drink-container">
 
-                        <ul class "three column nav-drink omega" id="drink">
-                            <li><a href="#beer">beer</a></li>
-                            <li><a href="#farm-beer">farm beer</a></li>
-                            <li><a href="#cider">cider</a></li>
-                            <li><a href="#libations">libations</a></li>
-                            <li><a href="#teet">teetotalers</a></li>
-                            <li><a href="#wine-od">wines on draught</a></li>
-                            <li><a href="#white">white by the bottle</a></li>
-                            <li><a href="#red">red by the bottle</a></li>
-                        </ul> <!-- end of nav-drink -->
+                            <h2 class="label">drinks</h2>
+    
+                            <!-- <ul class "three column nav-drink omega" id="drink"> -->
+                            <ul id="drink" style="float: left;">
+                                <li><a href="#beer">beer</a></li>
+                                <li><a href="#farm-beer">farm beer</a></li>
+                                <li><a href="#cider">cider</a></li>
+                                <li><a href="#libations">libations</a></li>
+                                <li><a href="#teet">teetotalers</a></li>
+                                <li><a href="#wine-od">wines on draught</a></li>
+                                <li><a href="#white">white by the bottle</a></li>
+                                <li><a href="#red">red by the bottle</a></li>
+                            </ul> <!-- end of nav-drink -->
+
+                        </div>
 
                     </nav> <!-- end of navigation -->
 
                     <div class="seven columns menu">
-                        <div class="three columns food alpha">
+                        <div class="food alpha" id="menu-food">
                             
                             <h1 class="food-title">food</h1>
 
@@ -361,7 +386,7 @@
 
                         </div> <!-- end food -->
 
-                        <div class="three columns drinks omega">
+                        <div class="drinks omega">
                             
                             <h1 class="drink-title">drinks</h1>
                             
@@ -582,22 +607,21 @@
                             <h4 class="menu-desc">T, Pesquera Reserve, Ribero del Duero, '09</h4>
 
                             <h3 class="item-name">Cabernet/Cinsault</h3>
-                            <h4 class="menu-desc">Chateau Musar, Bekaa Valley '05</h4>
+                            <h4 class="menu-desc" id="drink-bottom">Chateau Musar, Bekaa Valley '05</h4>
 
 
 
                         </div> <!-- end drinks -->
                     </div> <!-- end menu -->
 
-                    
-
                 </div> <!-- end body-->
                 
             </div>
 
-            <div class="nav-fixed">
-                        <a href="#nav-top" id="nav-up"></a>
+            <div class="one offset-by-eleven columns nav-fixed" id="nav-fixed">
+                <a href="#nav-top" class="nav-up" id="nav-up"></a>
             </div>
+            
 
         </div><!--end container -->
 
@@ -608,8 +632,22 @@
         <!-- Load jQuery plugins here -->
         <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+        <script src="js/vendor/waypoints.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+        <script>
+            $(function(){
+                $('.flexslider').flexslider({
+                    animation: 'slide' ,
+                    controlNav: false ,
+                    slideshowSpeed: 3000 ,
+                    animationSpeed: 600 ,
+                    pauseOnAction: true,
+                    pauseOnHover: true
+                });
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
