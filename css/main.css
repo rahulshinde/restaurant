@@ -464,6 +464,18 @@ li a:visited {/*
     margin-left: 0;
   }
 
+  #site-info {
+    margin-left: 10px;
+  }
+
+  #c2 {
+    margin-top: -33px;
+  }
+
+  .masthead-social {
+    visibility: hidden;
+  }
+
 }
 
 /* === END elements that need to be restyled for mobile === */
