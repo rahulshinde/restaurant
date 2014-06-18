@@ -351,6 +351,8 @@ li a:visited {/*
   margin-left: 44px;
 }
 
+
+
 /* ============================================== 
    elements that need to be restyled for mobile 
    ============================================== */
@@ -521,7 +523,8 @@ li a:visited {/*
    margin-right: auto;
    margin-left: auto;
    height: auto;
-   margin-top: 36px;   
+   margin-top: 36px;
+
 }
 
 .header { 
@@ -535,6 +538,7 @@ li a:visited {/*
    float: none;
    margin-right: auto;
    margin-left: auto;
+   padding-bottom: 200px;
 }
 
 
