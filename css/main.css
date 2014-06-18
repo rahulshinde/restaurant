@@ -367,6 +367,10 @@ li a:visited {/*
     margin-left: 10px;
   }
 
+  .img {
+    margin-top: 10px;
+  }
+
 
   .food-container, .drink-container {
     width: 130px;
@@ -470,7 +474,7 @@ li a:visited {/*
   text-align: right;
   display: block;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   margin-left: -55px;
 }
 
