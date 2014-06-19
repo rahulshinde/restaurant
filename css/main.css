@@ -625,6 +625,7 @@ li a:visited {/*
     height: 22px;
     background-image: url(../img/sprites.png);
     background-repeat: no-repeat
+    overflow: hidden;
 }
 
 .social-facebook {
